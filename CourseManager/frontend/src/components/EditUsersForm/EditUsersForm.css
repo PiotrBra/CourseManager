@@ -1,0 +1,85 @@
+/* EditUserForm.css */
+
+/* Główne "okienko" */
+.edit-user-form-container {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 400px;
+    padding: 2rem;
+    box-sizing: border-box;
+    margin: 0 auto; /* wyrównanie do środka (opcjonalnie) */
+}
+
+.edit-user-form-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+/* Formularz */
+.edit-user-form {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Pojedynczy "row" formularza */
+.edit-user-form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1rem;
+}
+
+.edit-user-form-label {
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    color: #555;
+}
+
+.edit-user-form-input {
+    padding: 0.5rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+    color: #333;
+    outline: none;
+    transition: border-color 0.2s;
+}
+
+.edit-user-form-input:focus {
+    border-color: #1E90FF; /* kolor podkreślenia jak w ProfilePage */
+}
+
+/* Przyciski akcji */
+.edit-user-form-actions {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1rem;
+}
+
+.edit-user-form-button {
+    background-color: #1E90FF;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 0.6rem 1.2rem;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease, transform 0.1s ease;
+}
+
+.edit-user-form-button:hover {
+    background-color: #0066cc;
+}
+
+.edit-user-form-button:active {
+    transform: scale(0.97);
+}
+
+/* Możesz dodać dodatkowe style dla przycisku "disabled" */
+.edit-user-form-button:disabled {
+    background-color: #aaa;
+    cursor: default;
+}
